@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden initially.
+  </div>
+
+  <script>
+    // Incorrect use of hidden attribute
+    document.getElementById("myDiv").hidden = true;
+    setTimeout(function() {
+      document.getElementById("myDiv").hidden = false;
+    }, 3000);
+  </script>
+</body>
+</html>
