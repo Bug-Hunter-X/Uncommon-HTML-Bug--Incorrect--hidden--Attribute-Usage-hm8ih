@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+<style>
+  #myDiv {
+    display: none; /* Initially hidden using CSS */
+  }
+</style>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden initially.
+  </div>
+
+  <script>
+    setTimeout(function() {
+      document.getElementById("myDiv").style.display = "block";
+    }, 3000);
+  </script>
+</body>
+</html>
